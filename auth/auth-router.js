@@ -36,7 +36,7 @@ router.post("/login", (req, res) => {
         req.session.loggedIn = true;
         res.status(200).json({ message: "Welcome!" });
       } else {
-        res.status(401).json({ message: "You cannot pass!" });
+        res.status(401).json({ message: "You shall not pass!" });
       }
     })
     .catch(error => {
